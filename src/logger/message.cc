@@ -29,6 +29,8 @@ Message::Message(LOG_LEVEL level,  const std::string& fileName,
             break;
         }
     }
+    fileName = fileName.substr(pos+1,fileName.length() - pos);
+    
         m_coloredHeader = FormatHeader(level,fileName,functionName,lineNumber,true);
         m_commonHeader  = FormatHeader(level,fileName,functionName,lineNumber,false);
 }
