@@ -1,0 +1,7 @@
+/home/ubuntu/text/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/text/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/text/build/src/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/text/build/src/CMakeFiles/edit_cache.dir
+/home/ubuntu/text/build/src/logger/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/text/build/src/logger/CMakeFiles/edit_cache.dir
+/home/ubuntu/text/build/src/logger/CMakeFiles/logger.dir
