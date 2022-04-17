@@ -1,5 +1,3 @@
-aux_source_directory(. SRC)
+#aux_source_directory(. LOGGER)
 
-add_definitions("-g -std=c++11")
-
-add_executable(logger ${SRC})
+#add_definitions("-g -std=c++11")

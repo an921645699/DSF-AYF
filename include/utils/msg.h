@@ -1,13 +1,18 @@
 #ifndef __MSG__H_
 #define __MSG__H_
-
+#include <string>
+#include <sstream>
 
 struct Msg{
     std::string m_msg;
     int m_numberOfRecvBytes;
 
-    struct Msg(std::string msg,int numberOfRecvBytes) : m_msg(msg),m_numberOfRecvBytes(numberOfRecvBytes){}
-    
+    Msg(std::string msg,int numberOfRecvBytes) : m_msg(msg),m_numberOfRecvBytes(numberOfRecvBytes){}
+    std::string To_String() const{
+        std::stringstream ss;
+        ss << "[recmsg:" << m_msg << "]" << "[numberOfRecvBytes:" << m_numberOfRecvBytes << "]";
+        return ss.str();
+    }
 };
 
 #endif

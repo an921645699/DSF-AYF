@@ -71,64 +71,75 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/logger/all
+src/all: src/CMakeFiles/server.dir/all
+src/all: src/CMakeFiles/client.dir/all
 
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall: src/logger/preinstall
+src/preinstall:
 
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/logger/clean
+src/clean: src/CMakeFiles/server.dir/clean
+src/clean: src/CMakeFiles/client.dir/clean
 
 .PHONY : src/clean
 
 #=============================================================================
-# Directory level rules for directory src/logger
-
-# Recursive "all" directory target.
-src/logger/all: src/logger/CMakeFiles/logger.dir/all
-
-.PHONY : src/logger/all
-
-# Recursive "preinstall" directory target.
-src/logger/preinstall:
-
-.PHONY : src/logger/preinstall
-
-# Recursive "clean" directory target.
-src/logger/clean: src/logger/CMakeFiles/logger.dir/clean
-
-.PHONY : src/logger/clean
-
-#=============================================================================
-# Target rules for target src/logger/CMakeFiles/logger.dir
+# Target rules for target src/CMakeFiles/server.dir
 
 # All Build rule for target.
-src/logger/CMakeFiles/logger.dir/all:
-	$(MAKE) -f src/logger/CMakeFiles/logger.dir/build.make src/logger/CMakeFiles/logger.dir/depend
-	$(MAKE) -f src/logger/CMakeFiles/logger.dir/build.make src/logger/CMakeFiles/logger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=1,2,3,4 "Built target logger"
-.PHONY : src/logger/CMakeFiles/logger.dir/all
+src/CMakeFiles/server.dir/all:
+	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/depend
+	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target server"
+.PHONY : src/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
-src/logger/CMakeFiles/logger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 src/logger/CMakeFiles/logger.dir/all
+src/CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 0
-.PHONY : src/logger/CMakeFiles/logger.dir/rule
+.PHONY : src/CMakeFiles/server.dir/rule
 
 # Convenience name for target.
-logger: src/logger/CMakeFiles/logger.dir/rule
+server: src/CMakeFiles/server.dir/rule
 
-.PHONY : logger
+.PHONY : server
 
 # clean rule for target.
-src/logger/CMakeFiles/logger.dir/clean:
-	$(MAKE) -f src/logger/CMakeFiles/logger.dir/build.make src/logger/CMakeFiles/logger.dir/clean
-.PHONY : src/logger/CMakeFiles/logger.dir/clean
+src/CMakeFiles/server.dir/clean:
+	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/clean
+.PHONY : src/CMakeFiles/server.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/client.dir
+
+# All Build rule for target.
+src/CMakeFiles/client.dir/all:
+	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/depend
+	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target client"
+.PHONY : src/CMakeFiles/client.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: src/CMakeFiles/client.dir/rule
+
+.PHONY : client
+
+# clean rule for target.
+src/CMakeFiles/client.dir/clean:
+	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/clean
+.PHONY : src/CMakeFiles/client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

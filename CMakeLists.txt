@@ -4,7 +4,7 @@ project(main)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 include_directories(${PROJECT_SOURCE_DIR}/include/logger)
-#include_directories(${PROJECT_SOURCE_DIR}/include/utils)
+include_directories(${PROJECT_SOURCE_DIR}/include/utils)
 
 add_definitions("-g")
 

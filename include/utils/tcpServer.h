@@ -10,11 +10,11 @@ class TcpServer {
 private:
     int m_lfd;
 public:
-    TcpServer(const IpAddressPort&);
+    TcpServer(const IpAddressPort& ipAddressPort);
     ~TcpServer();
     int Accept();
-    int SendMsg(const std::string& msg);
-    Msg RecvMsg();
+    int SendMsg(int cfd,const std::string& msg);
+    Msg RecvMsg(int cfd);
     int GetLfd() const;
 };
 

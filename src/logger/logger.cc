@@ -43,4 +43,3 @@
         m_logFile.open(logFileName);
         m_LogToLogFile = true; 
     }
-

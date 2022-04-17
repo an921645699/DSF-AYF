@@ -20,11 +20,12 @@ std::string Message::formatFieldWithColor(COLOR_NUMBER colorNumber, bool dark,
     return ss.str();
 }
 
-Message::Message(LOG_LEVEL level,  const std::string& fileName, 
+Message::Message(LOG_LEVEL level,  const std::string& absoluteFileName, 
     const std::string& functionName, int lineNumber, bool colored) {
-        int pos = 0;
-    for(int i = fileName.length() -1;i >= 0;i++){
-        if(fileName[i] == "/"){
+    std::string fileName = absoluteFileName;
+    int pos = 0;
+    for(int i = fileName.length() -1;i >= 0; --i){
+        if( fileName[i] == '/'){
             pos = i;
             break;
         }
@@ -62,4 +63,5 @@ Message::Message(LOG_LEVEL level,  const std::string& fileName,
 std::string Message::ToString(bool colored) const{
     return colored ? m_coloredHeader + m_msg : m_commonHeader + m_msg;
 }
+
 

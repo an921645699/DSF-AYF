@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named logger
+# Target rules for targets named server
 
 # Build rule for target.
-logger: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 logger
-.PHONY : logger
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
 # fast build rule for target.
-logger/fast:
-	$(MAKE) -f src/logger/CMakeFiles/logger.dir/build.make src/logger/CMakeFiles/logger.dir/build
-.PHONY : logger/fast
+server/fast:
+	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 # Help Target
 help:
@@ -131,7 +144,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... logger"
+	@echo "... server"
+	@echo "... client"
 .PHONY : help
 
 
