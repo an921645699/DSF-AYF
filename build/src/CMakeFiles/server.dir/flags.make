@@ -6,5 +6,5 @@ CXX_FLAGS =   -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ubuntu/text/include/logger -I/home/ubuntu/text/include/utils 
+CXX_INCLUDES = -I/home/ubuntu/text/include/logger -I/home/ubuntu/text/include/utils -I/home/ubuntu/text/include/thread -I/home/ubuntu/text/include/threadPool -I/home/ubuntu/text/include/reactor -I/home/ubuntu/text/include/view -I/home/ubuntu/text/include/controller 
 

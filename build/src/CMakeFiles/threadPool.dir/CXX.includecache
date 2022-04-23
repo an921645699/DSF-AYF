@@ -42,13 +42,17 @@ reactor.h
 logger.h
 ../include/thread/logger.h
 
-../include/threadPool/threadPool.h
-vector
--
-
-/home/ubuntu/text/src/threadPool/threadPool.cc
-threadPool.h
-/home/ubuntu/text/src/threadPool/threadPool.h
+/home/ubuntu/text/src/thread/thread.cc
 thread.h
-/home/ubuntu/text/src/threadPool/thread.h
+/home/ubuntu/text/src/thread/thread.h
+logger.h
+/home/ubuntu/text/src/thread/logger.h
+string.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+unistd.h
+-
 

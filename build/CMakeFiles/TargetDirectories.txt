@@ -2,5 +2,8 @@
 /home/ubuntu/text/build/CMakeFiles/edit_cache.dir
 /home/ubuntu/text/build/src/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/text/build/src/CMakeFiles/edit_cache.dir
+/home/ubuntu/text/build/src/CMakeFiles/reactor.dir
+/home/ubuntu/text/build/src/CMakeFiles/threadPool.dir
+/home/ubuntu/text/build/src/CMakeFiles/thread.dir
 /home/ubuntu/text/build/src/CMakeFiles/server.dir
 /home/ubuntu/text/build/src/CMakeFiles/client.dir

@@ -42,15 +42,11 @@ reactor.h
 logger.h
 ../include/thread/logger.h
 
-/home/ubuntu/text/src/reactor/reactor.cc
-reactor.h
-/home/ubuntu/text/src/reactor/reactor.h
-logger.h
-/home/ubuntu/text/src/reactor/logger.h
-
 /home/ubuntu/text/src/thread/thread.cc
 thread.h
 /home/ubuntu/text/src/thread/thread.h
+logger.h
+/home/ubuntu/text/src/thread/logger.h
 string.h
 -
 sys/socket.h

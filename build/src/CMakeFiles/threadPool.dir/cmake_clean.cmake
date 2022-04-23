@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/threadPool.dir/logger/message.cc.o"
   "CMakeFiles/threadPool.dir/logger/timeStamp.cc.o"
   "CMakeFiles/threadPool.dir/reactor/reactor.cc.o"
+  "CMakeFiles/threadPool.dir/thread/thread.cc.o"
   "CMakeFiles/threadPool.dir/threadPool/threadPool.cc.o"
 )
 

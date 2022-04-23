@@ -26,4 +26,3 @@ void Reactor::Loop(){
     event_base_dispatch(m_reactor);
 }
 
-int main(){}

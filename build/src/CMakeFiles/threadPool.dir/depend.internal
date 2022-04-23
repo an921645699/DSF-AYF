@@ -21,6 +21,13 @@ src/CMakeFiles/threadPool.dir/reactor/reactor.cc.o
  ../include/logger/public.h
  ../include/reactor/reactor.h
  /home/ubuntu/text/src/reactor/reactor.cc
+src/CMakeFiles/threadPool.dir/thread/thread.cc.o
+ ../include/logger/logger.h
+ ../include/logger/message.h
+ ../include/logger/public.h
+ ../include/reactor/reactor.h
+ ../include/thread/thread.h
+ /home/ubuntu/text/src/thread/thread.cc
 src/CMakeFiles/threadPool.dir/threadPool/threadPool.cc.o
  ../include/logger/logger.h
  ../include/logger/message.h

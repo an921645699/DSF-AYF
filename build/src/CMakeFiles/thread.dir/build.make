@@ -57,22 +57,9 @@ include src/CMakeFiles/thread.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/thread.dir/flags.make
 
-src/CMakeFiles/thread.dir/thread/thread.cc.o: src/CMakeFiles/thread.dir/flags.make
-src/CMakeFiles/thread.dir/thread/thread.cc.o: ../src/thread/thread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/thread.dir/thread/thread.cc.o"
-	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thread.dir/thread/thread.cc.o -c /home/ubuntu/text/src/thread/thread.cc
-
-src/CMakeFiles/thread.dir/thread/thread.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thread.dir/thread/thread.cc.i"
-	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/text/src/thread/thread.cc > CMakeFiles/thread.dir/thread/thread.cc.i
-
-src/CMakeFiles/thread.dir/thread/thread.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thread.dir/thread/thread.cc.s"
-	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/thread/thread.cc -o CMakeFiles/thread.dir/thread/thread.cc.s
-
 src/CMakeFiles/thread.dir/reactor/reactor.cc.o: src/CMakeFiles/thread.dir/flags.make
 src/CMakeFiles/thread.dir/reactor/reactor.cc.o: ../src/reactor/reactor.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/thread.dir/reactor/reactor.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/thread.dir/reactor/reactor.cc.o"
 	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thread.dir/reactor/reactor.cc.o -c /home/ubuntu/text/src/reactor/reactor.cc
 
 src/CMakeFiles/thread.dir/reactor/reactor.cc.i: cmake_force
@@ -82,6 +69,19 @@ src/CMakeFiles/thread.dir/reactor/reactor.cc.i: cmake_force
 src/CMakeFiles/thread.dir/reactor/reactor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thread.dir/reactor/reactor.cc.s"
 	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/reactor/reactor.cc -o CMakeFiles/thread.dir/reactor/reactor.cc.s
+
+src/CMakeFiles/thread.dir/thread/thread.cc.o: src/CMakeFiles/thread.dir/flags.make
+src/CMakeFiles/thread.dir/thread/thread.cc.o: ../src/thread/thread.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/thread.dir/thread/thread.cc.o"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thread.dir/thread/thread.cc.o -c /home/ubuntu/text/src/thread/thread.cc
+
+src/CMakeFiles/thread.dir/thread/thread.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thread.dir/thread/thread.cc.i"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/text/src/thread/thread.cc > CMakeFiles/thread.dir/thread/thread.cc.i
+
+src/CMakeFiles/thread.dir/thread/thread.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thread.dir/thread/thread.cc.s"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/thread/thread.cc -o CMakeFiles/thread.dir/thread/thread.cc.s
 
 src/CMakeFiles/thread.dir/logger/logger.cc.o: src/CMakeFiles/thread.dir/flags.make
 src/CMakeFiles/thread.dir/logger/logger.cc.o: ../src/logger/logger.cc
@@ -124,8 +124,8 @@ src/CMakeFiles/thread.dir/logger/timeStamp.cc.s: cmake_force
 
 # Object files for target thread
 thread_OBJECTS = \
-"CMakeFiles/thread.dir/thread/thread.cc.o" \
 "CMakeFiles/thread.dir/reactor/reactor.cc.o" \
+"CMakeFiles/thread.dir/thread/thread.cc.o" \
 "CMakeFiles/thread.dir/logger/logger.cc.o" \
 "CMakeFiles/thread.dir/logger/message.cc.o" \
 "CMakeFiles/thread.dir/logger/timeStamp.cc.o"
@@ -133,8 +133,8 @@ thread_OBJECTS = \
 # External object files for target thread
 thread_EXTERNAL_OBJECTS =
 
-../bin/thread: src/CMakeFiles/thread.dir/thread/thread.cc.o
 ../bin/thread: src/CMakeFiles/thread.dir/reactor/reactor.cc.o
+../bin/thread: src/CMakeFiles/thread.dir/thread/thread.cc.o
 ../bin/thread: src/CMakeFiles/thread.dir/logger/logger.cc.o
 ../bin/thread: src/CMakeFiles/thread.dir/logger/message.cc.o
 ../bin/thread: src/CMakeFiles/thread.dir/logger/timeStamp.cc.o

@@ -63,7 +63,7 @@ static std::unordered_map<std::string,LOG_LEVEL> logLevelType ={
 enum BIZTYPE{
     LOGIN = 0,
     
-}
+};
 
 
 #endif

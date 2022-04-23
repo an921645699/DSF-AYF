@@ -2,7 +2,6 @@
 #define __REACTOR__H_
 #include <event.h>
 
-
 class Reactor{
 private:
     struct event_base* m_reactor;

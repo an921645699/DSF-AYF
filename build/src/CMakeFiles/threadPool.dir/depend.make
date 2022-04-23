@@ -21,6 +21,13 @@ src/CMakeFiles/threadPool.dir/reactor/reactor.cc.o: ../include/logger/public.h
 src/CMakeFiles/threadPool.dir/reactor/reactor.cc.o: ../include/reactor/reactor.h
 src/CMakeFiles/threadPool.dir/reactor/reactor.cc.o: ../src/reactor/reactor.cc
 
+src/CMakeFiles/threadPool.dir/thread/thread.cc.o: ../include/logger/logger.h
+src/CMakeFiles/threadPool.dir/thread/thread.cc.o: ../include/logger/message.h
+src/CMakeFiles/threadPool.dir/thread/thread.cc.o: ../include/logger/public.h
+src/CMakeFiles/threadPool.dir/thread/thread.cc.o: ../include/reactor/reactor.h
+src/CMakeFiles/threadPool.dir/thread/thread.cc.o: ../include/thread/thread.h
+src/CMakeFiles/threadPool.dir/thread/thread.cc.o: ../src/thread/thread.cc
+
 src/CMakeFiles/threadPool.dir/threadPool/threadPool.cc.o: ../include/logger/logger.h
 src/CMakeFiles/threadPool.dir/threadPool/threadPool.cc.o: ../include/logger/message.h
 src/CMakeFiles/threadPool.dir/threadPool/threadPool.cc.o: ../include/logger/public.h

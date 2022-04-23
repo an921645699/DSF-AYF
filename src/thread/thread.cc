@@ -1,4 +1,5 @@
 #include "thread.h"
+#include "logger.h"
 #include <string.h>
 #include <sys/socket.h>
 #include <sys/types.h>
@@ -7,7 +8,7 @@
  
 
 Thread::Thread(){
-    if(!pthread_create(&m_tid,NULL,taskFunc,this)){
+    if(pthread_create(&m_tid,NULL,taskFunc,this)){
         LOG_FATAL << "create thread failed!" ;
     }
     if(-1 == socketpair(AF_UNIX,SOCK_STREAM,0,m_channel)){
@@ -31,7 +32,7 @@ void* Thread::taskFunc(void* arg){
     Thread* thread = static_cast<Thread*>(arg);
     thread->m_reactor = new Reactor();
     thread->m_reactor->AddEventAndHander(thread->GetSocketPairSecond(),EV_READ | EV_PERSIST,Thread::SocketPairEventCallBack,arg);
-    LOG_INFO << thread ->m_tid;
+    LOG_INFO << "hello";
 
     thread->m_reactor->Loop();
 }  
@@ -57,6 +58,8 @@ Thread::~Thread(){
         pthread_join(m_tid,NULL);
     }
 
-int main()
-{}
-
+int main(){
+    Thread t;
+    sleep(1);
+    return 0;
+}
