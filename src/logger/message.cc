@@ -32,15 +32,15 @@ Message::Message(LOG_LEVEL level,  const std::string& absoluteFileName,
     }
     fileName = fileName.substr(pos+1,fileName.length() - pos);
     
-        m_coloredHeader = FormatHeader(level,fileName,functionName,lineNumber,true);
-        m_commonHeader  = FormatHeader(level,fileName,functionName,lineNumber,false);
+    m_coloredHeader = FormatHeader(level,fileName,functionName,lineNumber,true);
+    m_commonHeader  = FormatHeader(level,fileName,functionName,lineNumber,false);
 }
 
  std::string Message::FormatHeader(LOG_LEVEL level, const std::string& fileName, 
         const std::string& functionName, int lineNumber, bool colored = true) {
     // 时间戳
     std::stringstream ss;
-    ss << formatFieldWithColor(DEFAULT_COLOR, 0, "", "[" + TimeStamp::Now().ToString() + "]", colored);
+    ss << formatFieldWithColor(DEFAULT_COLOR, 0, "", TimeStamp::Now().ToString(), colored);
 
     // 日志级别  INFO -> "[INFO]"
     COLOR_NUMBER logColorNumber = LogLevelColor[level];
@@ -57,7 +57,7 @@ Message::Message(LOG_LEVEL level,  const std::string& absoluteFileName,
     COLOR_NUMBER lineColor = LogFeileColor[LINE_NUMBER];
     ss << formatFieldWithColor(lineColor, 1, "", "[" + std::to_string(lineNumber) + "]:", colored);
 
-    return ss.str();
+    return ss.str(); 
 }
 
 std::string Message::ToString(bool colored) const{

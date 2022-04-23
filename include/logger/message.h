@@ -1,6 +1,5 @@
 #ifndef __MESSAGE_H__
 #define __MESSAGE_H__
-
 #include "public.h"
 #include <string>
 #include <sstream>
@@ -21,16 +20,7 @@ public:
     // [时间戳];[日志级别];[文件名称];[函数名称];[行号]
     std::string FormatHeader(LOG_LEVEL level, const std::string& fileName, 
         const std::string& functionName, int lineNumber, bool colored );
-        // 时间戳
 
-        // 日志级别
-
-        // 文件名称
-
-        // 函数名称
-
-        // 行号
-    
     std::string ToString(bool colored = true ) const;
 
     template <typename T>

@@ -36,18 +36,8 @@ cctype
 string
 -
 
-../include/utils/ipAddressPort.h
-string
--
-
-../include/utils/msg.h
-string
--
-sstream
--
-
-../include/utils/tcpServer.h
-string
+../include/reactor/reactor.h
+event.h
 -
 
 /home/ubuntu/text/src/logger/logger.cc
@@ -74,39 +64,9 @@ iostream
 sstream
 -
 
-/home/ubuntu/text/src/logger/timeStamp.cc
-iostream
--
-ctime
--
-timeStamp.h
-/home/ubuntu/text/src/logger/timeStamp.h
-public.h
-/home/ubuntu/text/src/logger/public.h
-
-/home/ubuntu/text/src/utils/tcpServer.cc
-ipAddressPort.h
-/home/ubuntu/text/src/utils/ipAddressPort.h
-tcpServer.h
-/home/ubuntu/text/src/utils/tcpServer.h
-public.h
-/home/ubuntu/text/src/utils/public.h
-message.h
-/home/ubuntu/text/src/utils/message.h
+/home/ubuntu/text/src/reactor/reactor.cc
+reactor.h
+/home/ubuntu/text/src/reactor/reactor.h
 logger.h
-/home/ubuntu/text/src/utils/logger.h
-msg.h
-/home/ubuntu/text/src/utils/msg.h
-sys/socket.h
--
-sys/types.h
--
-netinet/in.h
--
-arpa/inet.h
--
-unistd.h
--
-string.h
--
+/home/ubuntu/text/src/reactor/logger.h
 

@@ -1,7 +1,7 @@
 #ifndef __LOGGER__H_
 #define __LOGGER__H_
-#include<iostream>
-#include<fstream>
+#include <iostream>
+#include <fstream>
 #include "message.h"
 #include "public.h"
 //单例模式
@@ -44,7 +44,7 @@ public:
         }
     }
 };
-
+ 
 #define LOG(level) \
     if(level >= Logger::GetInstance() ->GetLogLevel()) \
         *Logger::GetInstance() += Message(level, __FILE__ , __FUNCTION__ , __LINE__ )

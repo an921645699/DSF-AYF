@@ -2,22 +2,25 @@
 #define __THREAD__H_
 
 #include <pthread.h>
+#include "reactor.h"
 #include "logger.h"
 
-class Thread {
+class Reactor;
+class Thread{
 private:
     pthread_t m_tid;
+    int m_channel[2];
+    Reactor* m_reactor;
 public: 
-    void* taskFunc(void* arg){
-        Thread* thread = static_cast<Thread*>(arg);
-        LOG_INFO << thread ->m_tid;
-    }
-    Thread(){
-        if(!pthread(&m_tid,NULL,taskFunc,this)){
-            LOG_FATAL << "create thread failed!"
-        }
-    }
-    ~thread();
+    static void* taskFunc(void* arg);
+    static void SocketPairEventCallBack(int fd,short events,void* arg);
+    static void ClientIOEventCallBack(int fd,short events,void* arg);
+    Thread();
+    ~Thread();  
+
+    int GetSocketPairFirst()const;
+    int GetSocketPairSecond()const;
+    int GetTid()const;
 
 };
 
