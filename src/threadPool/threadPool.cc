@@ -6,6 +6,7 @@ ThreadPool::ThreadPool(int numberOfThread) : m_numberOfThread(numberOfThread){
         m_pool.push_back(new Thread());
     }
 }
+
 ThreadPool::~ThreadPool(){
     for(int i = m_numberOfThread-1;i>=0;i++){
         delete m_pool[i];
@@ -14,4 +15,9 @@ ThreadPool::~ThreadPool(){
 }
 int ThreadPool::GetNumberOfTread()const{
     return m_numberOfThread;
+}
+
+int ThreadPool::GetSubThreadSocketPairFirst() const{
+    static int robin = 0;
+    return m_pool[robin ++ % m_numberOfThread]->GetSocketPairFirst();
 }

@@ -111,51 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/reactor.dir/rule:
-	cd /home/ubuntu/text/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/reactor.dir/rule
-.PHONY : src/CMakeFiles/reactor.dir/rule
-
-# Convenience name for target.
-reactor: src/CMakeFiles/reactor.dir/rule
-
-.PHONY : reactor
-
-# fast build rule for target.
-reactor/fast:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/build
-.PHONY : reactor/fast
-
-# Convenience name for target.
-src/CMakeFiles/threadPool.dir/rule:
-	cd /home/ubuntu/text/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/threadPool.dir/rule
-.PHONY : src/CMakeFiles/threadPool.dir/rule
-
-# Convenience name for target.
-threadPool: src/CMakeFiles/threadPool.dir/rule
-
-.PHONY : threadPool
-
-# fast build rule for target.
-threadPool/fast:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/build
-.PHONY : threadPool/fast
-
-# Convenience name for target.
-src/CMakeFiles/thread.dir/rule:
-	cd /home/ubuntu/text/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/thread.dir/rule
-.PHONY : src/CMakeFiles/thread.dir/rule
-
-# Convenience name for target.
-thread: src/CMakeFiles/thread.dir/rule
-
-.PHONY : thread
-
-# fast build rule for target.
-thread/fast:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/build
-.PHONY : thread/fast
-
-# Convenience name for target.
 src/CMakeFiles/server.dir/rule:
 	cd /home/ubuntu/text/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/server.dir/rule
 .PHONY : src/CMakeFiles/server.dir/rule
@@ -191,9 +146,6 @@ logger/logger.o: logger/logger.cc.o
 
 # target to build an object file
 logger/logger.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/logger/logger.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/logger/logger.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/logger/logger.cc.o
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/logger/logger.cc.o
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/logger.cc.o
 .PHONY : logger/logger.cc.o
@@ -204,9 +156,6 @@ logger/logger.i: logger/logger.cc.i
 
 # target to preprocess a source file
 logger/logger.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/logger/logger.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/logger/logger.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/logger/logger.cc.i
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/logger/logger.cc.i
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/logger.cc.i
 .PHONY : logger/logger.cc.i
@@ -217,9 +166,6 @@ logger/logger.s: logger/logger.cc.s
 
 # target to generate assembly for a file
 logger/logger.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/logger/logger.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/logger/logger.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/logger/logger.cc.s
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/logger/logger.cc.s
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/logger.cc.s
 .PHONY : logger/logger.cc.s
@@ -230,9 +176,6 @@ logger/message.o: logger/message.cc.o
 
 # target to build an object file
 logger/message.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/logger/message.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/logger/message.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/logger/message.cc.o
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/logger/message.cc.o
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/message.cc.o
 .PHONY : logger/message.cc.o
@@ -243,9 +186,6 @@ logger/message.i: logger/message.cc.i
 
 # target to preprocess a source file
 logger/message.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/logger/message.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/logger/message.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/logger/message.cc.i
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/logger/message.cc.i
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/message.cc.i
 .PHONY : logger/message.cc.i
@@ -256,9 +196,6 @@ logger/message.s: logger/message.cc.s
 
 # target to generate assembly for a file
 logger/message.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/logger/message.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/logger/message.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/logger/message.cc.s
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/logger/message.cc.s
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/message.cc.s
 .PHONY : logger/message.cc.s
@@ -269,9 +206,6 @@ logger/timeStamp.o: logger/timeStamp.cc.o
 
 # target to build an object file
 logger/timeStamp.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/logger/timeStamp.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/logger/timeStamp.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/logger/timeStamp.cc.o
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/logger/timeStamp.cc.o
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/timeStamp.cc.o
 .PHONY : logger/timeStamp.cc.o
@@ -282,9 +216,6 @@ logger/timeStamp.i: logger/timeStamp.cc.i
 
 # target to preprocess a source file
 logger/timeStamp.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/logger/timeStamp.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/logger/timeStamp.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/logger/timeStamp.cc.i
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/logger/timeStamp.cc.i
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/timeStamp.cc.i
 .PHONY : logger/timeStamp.cc.i
@@ -295,12 +226,36 @@ logger/timeStamp.s: logger/timeStamp.cc.s
 
 # target to generate assembly for a file
 logger/timeStamp.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/logger/timeStamp.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/logger/timeStamp.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/logger/timeStamp.cc.s
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/logger/timeStamp.cc.s
 	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/timeStamp.cc.s
 .PHONY : logger/timeStamp.cc.s
+
+mainServer/mainServer.o: mainServer/mainServer.cc.o
+
+.PHONY : mainServer/mainServer.o
+
+# target to build an object file
+mainServer/mainServer.cc.o:
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/mainServer/mainServer.cc.o
+.PHONY : mainServer/mainServer.cc.o
+
+mainServer/mainServer.i: mainServer/mainServer.cc.i
+
+.PHONY : mainServer/mainServer.i
+
+# target to preprocess a source file
+mainServer/mainServer.cc.i:
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/mainServer/mainServer.cc.i
+.PHONY : mainServer/mainServer.cc.i
+
+mainServer/mainServer.s: mainServer/mainServer.cc.s
+
+.PHONY : mainServer/mainServer.s
+
+# target to generate assembly for a file
+mainServer/mainServer.cc.s:
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/mainServer/mainServer.cc.s
+.PHONY : mainServer/mainServer.cc.s
 
 reactor/reactor.o: reactor/reactor.cc.o
 
@@ -308,9 +263,7 @@ reactor/reactor.o: reactor/reactor.cc.o
 
 # target to build an object file
 reactor/reactor.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/reactor/reactor.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/reactor/reactor.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/reactor/reactor.cc.o
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/reactor/reactor.cc.o
 .PHONY : reactor/reactor.cc.o
 
 reactor/reactor.i: reactor/reactor.cc.i
@@ -319,9 +272,7 @@ reactor/reactor.i: reactor/reactor.cc.i
 
 # target to preprocess a source file
 reactor/reactor.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/reactor/reactor.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/reactor/reactor.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/reactor/reactor.cc.i
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/reactor/reactor.cc.i
 .PHONY : reactor/reactor.cc.i
 
 reactor/reactor.s: reactor/reactor.cc.s
@@ -330,9 +281,7 @@ reactor/reactor.s: reactor/reactor.cc.s
 
 # target to generate assembly for a file
 reactor/reactor.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/reactor/reactor.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/reactor/reactor.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/reactor/reactor.cc.s
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/reactor/reactor.cc.s
 .PHONY : reactor/reactor.cc.s
 
 thread/thread.o: thread/thread.cc.o
@@ -341,8 +290,7 @@ thread/thread.o: thread/thread.cc.o
 
 # target to build an object file
 thread/thread.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/thread/thread.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/thread/thread.cc.o
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/thread/thread.cc.o
 .PHONY : thread/thread.cc.o
 
 thread/thread.i: thread/thread.cc.i
@@ -351,8 +299,7 @@ thread/thread.i: thread/thread.cc.i
 
 # target to preprocess a source file
 thread/thread.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/thread/thread.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/thread/thread.cc.i
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/thread/thread.cc.i
 .PHONY : thread/thread.cc.i
 
 thread/thread.s: thread/thread.cc.s
@@ -361,8 +308,7 @@ thread/thread.s: thread/thread.cc.s
 
 # target to generate assembly for a file
 thread/thread.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/thread/thread.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/thread/thread.cc.s
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/thread/thread.cc.s
 .PHONY : thread/thread.cc.s
 
 threadPool/threadPool.o: threadPool/threadPool.cc.o
@@ -371,7 +317,7 @@ threadPool/threadPool.o: threadPool/threadPool.cc.o
 
 # target to build an object file
 threadPool/threadPool.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/threadPool/threadPool.cc.o
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/threadPool/threadPool.cc.o
 .PHONY : threadPool/threadPool.cc.o
 
 threadPool/threadPool.i: threadPool/threadPool.cc.i
@@ -380,7 +326,7 @@ threadPool/threadPool.i: threadPool/threadPool.cc.i
 
 # target to preprocess a source file
 threadPool/threadPool.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/threadPool/threadPool.cc.i
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/threadPool/threadPool.cc.i
 .PHONY : threadPool/threadPool.cc.i
 
 threadPool/threadPool.s: threadPool/threadPool.cc.s
@@ -389,7 +335,7 @@ threadPool/threadPool.s: threadPool/threadPool.cc.s
 
 # target to generate assembly for a file
 threadPool/threadPool.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/threadPool/threadPool.cc.s
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/threadPool/threadPool.cc.s
 .PHONY : threadPool/threadPool.cc.s
 
 utils/ipAddressPort.o: utils/ipAddressPort.cc.o
@@ -484,9 +430,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... reactor"
-	@echo "... threadPool"
-	@echo "... thread"
 	@echo "... server"
 	@echo "... client"
 	@echo "... logger/logger.o"
@@ -498,6 +441,9 @@ help:
 	@echo "... logger/timeStamp.o"
 	@echo "... logger/timeStamp.i"
 	@echo "... logger/timeStamp.s"
+	@echo "... mainServer/mainServer.o"
+	@echo "... mainServer/mainServer.i"
+	@echo "... mainServer/mainServer.s"
 	@echo "... reactor/reactor.o"
 	@echo "... reactor/reactor.i"
 	@echo "... reactor/reactor.s"

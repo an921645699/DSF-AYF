@@ -3,16 +3,16 @@
 
 src/CMakeFiles/client.dir/logger/logger.cc.o: ../include/logger/logger.h
 src/CMakeFiles/client.dir/logger/logger.cc.o: ../include/logger/message.h
-src/CMakeFiles/client.dir/logger/logger.cc.o: ../include/logger/public.h
+src/CMakeFiles/client.dir/logger/logger.cc.o: ../include/public/public.h
 src/CMakeFiles/client.dir/logger/logger.cc.o: ../src/logger/logger.cc
 
 src/CMakeFiles/client.dir/logger/message.cc.o: ../include/logger/message.h
-src/CMakeFiles/client.dir/logger/message.cc.o: ../include/logger/public.h
 src/CMakeFiles/client.dir/logger/message.cc.o: ../include/logger/timeStamp.h
+src/CMakeFiles/client.dir/logger/message.cc.o: ../include/public/public.h
 src/CMakeFiles/client.dir/logger/message.cc.o: ../src/logger/message.cc
 
-src/CMakeFiles/client.dir/logger/timeStamp.cc.o: ../include/logger/public.h
 src/CMakeFiles/client.dir/logger/timeStamp.cc.o: ../include/logger/timeStamp.h
+src/CMakeFiles/client.dir/logger/timeStamp.cc.o: ../include/public/public.h
 src/CMakeFiles/client.dir/logger/timeStamp.cc.o: ../src/logger/timeStamp.cc
 
 src/CMakeFiles/client.dir/utils/ipAddressPort.cc.o: ../include/utils/ipAddressPort.h
@@ -20,7 +20,7 @@ src/CMakeFiles/client.dir/utils/ipAddressPort.cc.o: ../src/utils/ipAddressPort.c
 
 src/CMakeFiles/client.dir/utils/tcpClient.cc.o: ../include/logger/logger.h
 src/CMakeFiles/client.dir/utils/tcpClient.cc.o: ../include/logger/message.h
-src/CMakeFiles/client.dir/utils/tcpClient.cc.o: ../include/logger/public.h
+src/CMakeFiles/client.dir/utils/tcpClient.cc.o: ../include/public/public.h
 src/CMakeFiles/client.dir/utils/tcpClient.cc.o: ../include/utils/ipAddressPort.h
 src/CMakeFiles/client.dir/utils/tcpClient.cc.o: ../include/utils/msg.h
 src/CMakeFiles/client.dir/utils/tcpClient.cc.o: ../include/utils/tcpClient.h

@@ -4,16 +4,16 @@
 src/CMakeFiles/client.dir/logger/logger.cc.o
  ../include/logger/logger.h
  ../include/logger/message.h
- ../include/logger/public.h
+ ../include/public/public.h
  /home/ubuntu/text/src/logger/logger.cc
 src/CMakeFiles/client.dir/logger/message.cc.o
  ../include/logger/message.h
- ../include/logger/public.h
  ../include/logger/timeStamp.h
+ ../include/public/public.h
  /home/ubuntu/text/src/logger/message.cc
 src/CMakeFiles/client.dir/logger/timeStamp.cc.o
- ../include/logger/public.h
  ../include/logger/timeStamp.h
+ ../include/public/public.h
  /home/ubuntu/text/src/logger/timeStamp.cc
 src/CMakeFiles/client.dir/utils/ipAddressPort.cc.o
  ../include/utils/ipAddressPort.h
@@ -21,7 +21,7 @@ src/CMakeFiles/client.dir/utils/ipAddressPort.cc.o
 src/CMakeFiles/client.dir/utils/tcpClient.cc.o
  ../include/logger/logger.h
  ../include/logger/message.h
- ../include/logger/public.h
+ ../include/public/public.h
  ../include/utils/ipAddressPort.h
  ../include/utils/msg.h
  ../include/utils/tcpClient.h

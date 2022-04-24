@@ -1,5 +1,5 @@
-#ifndef __MSG__H_
-#define __MSG__H_
+#ifndef __MSG_H__
+#define __MSG_H__
 #include <string>
 #include <sstream>
 

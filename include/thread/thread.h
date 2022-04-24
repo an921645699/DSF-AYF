@@ -1,5 +1,5 @@
-#ifndef __THREAD__H_
-#define __THREAD__H_
+#ifndef __THREAD_H__
+#define __THREAD_H__
 
 #include <pthread.h>
 #include "reactor.h"
@@ -24,5 +24,5 @@ public:
 
 };
 
-
+ 
 #endif

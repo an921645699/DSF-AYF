@@ -71,9 +71,6 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/reactor.dir/all
-src/all: src/CMakeFiles/threadPool.dir/all
-src/all: src/CMakeFiles/thread.dir/all
 src/all: src/CMakeFiles/server.dir/all
 src/all: src/CMakeFiles/client.dir/all
 
@@ -85,94 +82,10 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/reactor.dir/clean
-src/clean: src/CMakeFiles/threadPool.dir/clean
-src/clean: src/CMakeFiles/thread.dir/clean
 src/clean: src/CMakeFiles/server.dir/clean
 src/clean: src/CMakeFiles/client.dir/clean
 
 .PHONY : src/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/reactor.dir
-
-# All Build rule for target.
-src/CMakeFiles/reactor.dir/all:
-	$(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/depend
-	$(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=7,8,9,10,11 "Built target reactor"
-.PHONY : src/CMakeFiles/reactor.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/reactor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/reactor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/reactor.dir/rule
-
-# Convenience name for target.
-reactor: src/CMakeFiles/reactor.dir/rule
-
-.PHONY : reactor
-
-# clean rule for target.
-src/CMakeFiles/reactor.dir/clean:
-	$(MAKE) -f src/CMakeFiles/reactor.dir/build.make src/CMakeFiles/reactor.dir/clean
-.PHONY : src/CMakeFiles/reactor.dir/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/threadPool.dir
-
-# All Build rule for target.
-src/CMakeFiles/threadPool.dir/all:
-	$(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/depend
-	$(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=24,25,26,27,28,29,30 "Built target threadPool"
-.PHONY : src/CMakeFiles/threadPool.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/threadPool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/threadPool.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/threadPool.dir/rule
-
-# Convenience name for target.
-threadPool: src/CMakeFiles/threadPool.dir/rule
-
-.PHONY : threadPool
-
-# clean rule for target.
-src/CMakeFiles/threadPool.dir/clean:
-	$(MAKE) -f src/CMakeFiles/threadPool.dir/build.make src/CMakeFiles/threadPool.dir/clean
-.PHONY : src/CMakeFiles/threadPool.dir/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/thread.dir
-
-# All Build rule for target.
-src/CMakeFiles/thread.dir/all:
-	$(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/depend
-	$(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=18,19,20,21,22,23 "Built target thread"
-.PHONY : src/CMakeFiles/thread.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/thread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/thread.dir/rule
-
-# Convenience name for target.
-thread: src/CMakeFiles/thread.dir/rule
-
-.PHONY : thread
-
-# clean rule for target.
-src/CMakeFiles/thread.dir/clean:
-	$(MAKE) -f src/CMakeFiles/thread.dir/build.make src/CMakeFiles/thread.dir/clean
-.PHONY : src/CMakeFiles/thread.dir/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/server.dir
@@ -181,12 +94,12 @@ src/CMakeFiles/thread.dir/clean:
 src/CMakeFiles/server.dir/all:
 	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/depend
 	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=12,13,14,15,16,17 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16 "Built target server"
 .PHONY : src/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/server.dir/rule

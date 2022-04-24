@@ -1,5 +1,5 @@
-#ifndef __REACTOR__H_
-#define __REACTOR__H_
+#ifndef __REACTOR_H__
+#define __REACTOR_H__
 #include <event.h>
 
 class Reactor{

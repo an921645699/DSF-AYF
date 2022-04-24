@@ -1,5 +1,5 @@
-#ifndef __IPADDRESS_PORT_H_
-#define __IPADDRESS_PORT_H_
+#ifndef __IPADDRESS_PORT_H__
+#define __IPADDRESS_PORT_H__
 
 #include<string>
 

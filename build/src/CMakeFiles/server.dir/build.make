@@ -57,22 +57,61 @@ include src/CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/server.dir/flags.make
 
-src/CMakeFiles/server.dir/utils/tcpServer.cc.o: src/CMakeFiles/server.dir/flags.make
-src/CMakeFiles/server.dir/utils/tcpServer.cc.o: ../src/utils/tcpServer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/server.dir/utils/tcpServer.cc.o"
-	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/utils/tcpServer.cc.o -c /home/ubuntu/text/src/utils/tcpServer.cc
+src/CMakeFiles/server.dir/mainServer/mainServer.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/mainServer/mainServer.cc.o: ../src/mainServer/mainServer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/server.dir/mainServer/mainServer.cc.o"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/mainServer/mainServer.cc.o -c /home/ubuntu/text/src/mainServer/mainServer.cc
 
-src/CMakeFiles/server.dir/utils/tcpServer.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/utils/tcpServer.cc.i"
-	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/text/src/utils/tcpServer.cc > CMakeFiles/server.dir/utils/tcpServer.cc.i
+src/CMakeFiles/server.dir/mainServer/mainServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mainServer/mainServer.cc.i"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/text/src/mainServer/mainServer.cc > CMakeFiles/server.dir/mainServer/mainServer.cc.i
 
-src/CMakeFiles/server.dir/utils/tcpServer.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/utils/tcpServer.cc.s"
-	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/utils/tcpServer.cc -o CMakeFiles/server.dir/utils/tcpServer.cc.s
+src/CMakeFiles/server.dir/mainServer/mainServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mainServer/mainServer.cc.s"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/mainServer/mainServer.cc -o CMakeFiles/server.dir/mainServer/mainServer.cc.s
+
+src/CMakeFiles/server.dir/reactor/reactor.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/reactor/reactor.cc.o: ../src/reactor/reactor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/server.dir/reactor/reactor.cc.o"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/reactor/reactor.cc.o -c /home/ubuntu/text/src/reactor/reactor.cc
+
+src/CMakeFiles/server.dir/reactor/reactor.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/reactor/reactor.cc.i"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/text/src/reactor/reactor.cc > CMakeFiles/server.dir/reactor/reactor.cc.i
+
+src/CMakeFiles/server.dir/reactor/reactor.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/reactor/reactor.cc.s"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/reactor/reactor.cc -o CMakeFiles/server.dir/reactor/reactor.cc.s
+
+src/CMakeFiles/server.dir/threadPool/threadPool.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/threadPool/threadPool.cc.o: ../src/threadPool/threadPool.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/server.dir/threadPool/threadPool.cc.o"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/threadPool/threadPool.cc.o -c /home/ubuntu/text/src/threadPool/threadPool.cc
+
+src/CMakeFiles/server.dir/threadPool/threadPool.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/threadPool/threadPool.cc.i"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/text/src/threadPool/threadPool.cc > CMakeFiles/server.dir/threadPool/threadPool.cc.i
+
+src/CMakeFiles/server.dir/threadPool/threadPool.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/threadPool/threadPool.cc.s"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/threadPool/threadPool.cc -o CMakeFiles/server.dir/threadPool/threadPool.cc.s
+
+src/CMakeFiles/server.dir/thread/thread.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/thread/thread.cc.o: ../src/thread/thread.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/server.dir/thread/thread.cc.o"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/thread/thread.cc.o -c /home/ubuntu/text/src/thread/thread.cc
+
+src/CMakeFiles/server.dir/thread/thread.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/thread/thread.cc.i"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/text/src/thread/thread.cc > CMakeFiles/server.dir/thread/thread.cc.i
+
+src/CMakeFiles/server.dir/thread/thread.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/thread/thread.cc.s"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/thread/thread.cc -o CMakeFiles/server.dir/thread/thread.cc.s
 
 src/CMakeFiles/server.dir/utils/ipAddressPort.cc.o: src/CMakeFiles/server.dir/flags.make
 src/CMakeFiles/server.dir/utils/ipAddressPort.cc.o: ../src/utils/ipAddressPort.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/server.dir/utils/ipAddressPort.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/server.dir/utils/ipAddressPort.cc.o"
 	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/utils/ipAddressPort.cc.o -c /home/ubuntu/text/src/utils/ipAddressPort.cc
 
 src/CMakeFiles/server.dir/utils/ipAddressPort.cc.i: cmake_force
@@ -83,9 +122,22 @@ src/CMakeFiles/server.dir/utils/ipAddressPort.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/utils/ipAddressPort.cc.s"
 	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/utils/ipAddressPort.cc -o CMakeFiles/server.dir/utils/ipAddressPort.cc.s
 
+src/CMakeFiles/server.dir/utils/tcpServer.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/utils/tcpServer.cc.o: ../src/utils/tcpServer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/server.dir/utils/tcpServer.cc.o"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/utils/tcpServer.cc.o -c /home/ubuntu/text/src/utils/tcpServer.cc
+
+src/CMakeFiles/server.dir/utils/tcpServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/utils/tcpServer.cc.i"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/text/src/utils/tcpServer.cc > CMakeFiles/server.dir/utils/tcpServer.cc.i
+
+src/CMakeFiles/server.dir/utils/tcpServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/utils/tcpServer.cc.s"
+	cd /home/ubuntu/text/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/text/src/utils/tcpServer.cc -o CMakeFiles/server.dir/utils/tcpServer.cc.s
+
 src/CMakeFiles/server.dir/logger/logger.cc.o: src/CMakeFiles/server.dir/flags.make
 src/CMakeFiles/server.dir/logger/logger.cc.o: ../src/logger/logger.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/server.dir/logger/logger.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/server.dir/logger/logger.cc.o"
 	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/logger/logger.cc.o -c /home/ubuntu/text/src/logger/logger.cc
 
 src/CMakeFiles/server.dir/logger/logger.cc.i: cmake_force
@@ -98,7 +150,7 @@ src/CMakeFiles/server.dir/logger/logger.cc.s: cmake_force
 
 src/CMakeFiles/server.dir/logger/message.cc.o: src/CMakeFiles/server.dir/flags.make
 src/CMakeFiles/server.dir/logger/message.cc.o: ../src/logger/message.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/server.dir/logger/message.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/server.dir/logger/message.cc.o"
 	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/logger/message.cc.o -c /home/ubuntu/text/src/logger/message.cc
 
 src/CMakeFiles/server.dir/logger/message.cc.i: cmake_force
@@ -111,7 +163,7 @@ src/CMakeFiles/server.dir/logger/message.cc.s: cmake_force
 
 src/CMakeFiles/server.dir/logger/timeStamp.cc.o: src/CMakeFiles/server.dir/flags.make
 src/CMakeFiles/server.dir/logger/timeStamp.cc.o: ../src/logger/timeStamp.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/server.dir/logger/timeStamp.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/server.dir/logger/timeStamp.cc.o"
 	cd /home/ubuntu/text/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/logger/timeStamp.cc.o -c /home/ubuntu/text/src/logger/timeStamp.cc
 
 src/CMakeFiles/server.dir/logger/timeStamp.cc.i: cmake_force
@@ -124,8 +176,12 @@ src/CMakeFiles/server.dir/logger/timeStamp.cc.s: cmake_force
 
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/utils/tcpServer.cc.o" \
+"CMakeFiles/server.dir/mainServer/mainServer.cc.o" \
+"CMakeFiles/server.dir/reactor/reactor.cc.o" \
+"CMakeFiles/server.dir/threadPool/threadPool.cc.o" \
+"CMakeFiles/server.dir/thread/thread.cc.o" \
 "CMakeFiles/server.dir/utils/ipAddressPort.cc.o" \
+"CMakeFiles/server.dir/utils/tcpServer.cc.o" \
 "CMakeFiles/server.dir/logger/logger.cc.o" \
 "CMakeFiles/server.dir/logger/message.cc.o" \
 "CMakeFiles/server.dir/logger/timeStamp.cc.o"
@@ -133,14 +189,18 @@ server_OBJECTS = \
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
-../bin/server: src/CMakeFiles/server.dir/utils/tcpServer.cc.o
+../bin/server: src/CMakeFiles/server.dir/mainServer/mainServer.cc.o
+../bin/server: src/CMakeFiles/server.dir/reactor/reactor.cc.o
+../bin/server: src/CMakeFiles/server.dir/threadPool/threadPool.cc.o
+../bin/server: src/CMakeFiles/server.dir/thread/thread.cc.o
 ../bin/server: src/CMakeFiles/server.dir/utils/ipAddressPort.cc.o
+../bin/server: src/CMakeFiles/server.dir/utils/tcpServer.cc.o
 ../bin/server: src/CMakeFiles/server.dir/logger/logger.cc.o
 ../bin/server: src/CMakeFiles/server.dir/logger/message.cc.o
 ../bin/server: src/CMakeFiles/server.dir/logger/timeStamp.cc.o
 ../bin/server: src/CMakeFiles/server.dir/build.make
 ../bin/server: src/CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../../bin/server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../../bin/server"
 	cd /home/ubuntu/text/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

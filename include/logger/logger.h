@@ -1,5 +1,5 @@
-#ifndef __LOGGER__H_
-#define __LOGGER__H_
+#ifndef __LOGGER_H__
+#define __LOGGER_H__
 #include <iostream>
 #include <fstream>
 #include "message.h"

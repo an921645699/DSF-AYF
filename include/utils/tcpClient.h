@@ -1,5 +1,5 @@
-#ifndef __TCP__CLIENT__H_
-#define __TCP__CLIENT__H_
+#ifndef __TCP_CLIENT_H__
+#define __TCP_CLIENT_H__
 
 #include <string>
 

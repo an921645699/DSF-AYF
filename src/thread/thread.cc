@@ -16,6 +16,10 @@ Thread::Thread(){
     }
 }
 
+Thread::~Thread(){
+    pthread_join(m_tid,NULL);
+}
+
 int Thread::GetSocketPairFirst()const{
     return m_channel[0];
 }
@@ -32,8 +36,8 @@ void* Thread::taskFunc(void* arg){
     Thread* thread = static_cast<Thread*>(arg);
     thread->m_reactor = new Reactor();
     thread->m_reactor->AddEventAndHander(thread->GetSocketPairSecond(),EV_READ | EV_PERSIST,Thread::SocketPairEventCallBack,arg);
-    LOG_INFO << "hello";
-
+    LOG_INFO << thread ->GetTid();
+    
     thread->m_reactor->Loop();
 }  
 
@@ -54,12 +58,3 @@ void Thread::ClientIOEventCallBack(int cfd,short events,void* arg){
     LOG_INFO << buf;
 }
 
-Thread::~Thread(){
-        pthread_join(m_tid,NULL);
-    }
-
-int main(){
-    Thread t;
-    sleep(1);
-    return 0;
-}

@@ -14,13 +14,16 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include/json"
   "../include/logger"
   "../include/utils"
+  "../include/public"
   "../include/thread"
   "../include/threadPool"
   "../include/reactor"
   "../include/view"
   "../include/controller"
+  "../include/mainServer"
   )
 
 # Targets to which this target links.

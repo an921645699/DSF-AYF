@@ -1,5 +1,5 @@
-#ifndef __THREAD_POOL__H_
-#define __THREAD_POOL__H_
+#ifndef __THREAD_POOL_H__
+#define __THREAD_POOL_H__
 #include <vector>
 
 class Thread;
@@ -11,6 +11,7 @@ public:
     ThreadPool(int numberOfThread);
     ~ThreadPool();
     int GetNumberOfTread() const;
+    int GetSubThreadSocketPairFirst() const;
 };
 
 #endif

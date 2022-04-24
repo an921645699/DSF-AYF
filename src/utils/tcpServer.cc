@@ -80,16 +80,3 @@ TcpServer::TcpServer(const IpAddressPort& ipAddressPort){
         return m_lfd;
     }
 
-    int main(){
-        IpAddressPort ser("127.0.0.1",5000);
-        TcpServer server(ser);
-        while(1){
-            int cfd = server.Accept();
-            if(cfd == -1){
-                continue;
-            }
-            Msg m = server.RecvMsg(cfd);
-            LOG_INFO << m.To_String();
-        }
-        return 0;
-    }

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/view/view.h
+string
+-
+
+/home/ubuntu/text/src/view/view.cc
+view.h
+/home/ubuntu/text/src/view/view.h
+
