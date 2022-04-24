@@ -4,11 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/text/src/logger/logger.cc" "/home/ubuntu/text/build/src/CMakeFiles/client.dir/logger/logger.cc.o"
-  "/home/ubuntu/text/src/logger/message.cc" "/home/ubuntu/text/build/src/CMakeFiles/client.dir/logger/message.cc.o"
-  "/home/ubuntu/text/src/logger/timeStamp.cc" "/home/ubuntu/text/build/src/CMakeFiles/client.dir/logger/timeStamp.cc.o"
-  "/home/ubuntu/text/src/utils/ipAddressPort.cc" "/home/ubuntu/text/build/src/CMakeFiles/client.dir/utils/ipAddressPort.cc.o"
-  "/home/ubuntu/text/src/utils/tcpClient.cc" "/home/ubuntu/text/build/src/CMakeFiles/client.dir/utils/tcpClient.cc.o"
+  "/home/ubuntu/text/src/logger/logger.cc" "/home/ubuntu/text/build/src/CMakeFiles/mysql.dir/logger/logger.cc.o"
+  "/home/ubuntu/text/src/logger/message.cc" "/home/ubuntu/text/build/src/CMakeFiles/mysql.dir/logger/message.cc.o"
+  "/home/ubuntu/text/src/logger/timeStamp.cc" "/home/ubuntu/text/build/src/CMakeFiles/mysql.dir/logger/timeStamp.cc.o"
+  "/home/ubuntu/text/src/mysql/mysql.cc" "/home/ubuntu/text/build/src/CMakeFiles/mysql.dir/mysql/mysql.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named server
+# Target rules for targets named mysql
 
 # Build rule for target.
-server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 server
-.PHONY : server
+mysql: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mysql
+.PHONY : mysql
 
 # fast build rule for target.
-server/fast:
-	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/build
-.PHONY : server/fast
+mysql/fast:
+	$(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/build
+.PHONY : mysql/fast
 
 #=============================================================================
 # Target rules for targets named client
@@ -144,7 +144,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... server"
+	@echo "... mysql"
 	@echo "... client"
 .PHONY : help
 

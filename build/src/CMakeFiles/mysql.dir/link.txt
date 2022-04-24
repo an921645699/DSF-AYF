@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/mysql.dir/mysql/mysql.cc.o CMakeFiles/mysql.dir/logger/logger.cc.o CMakeFiles/mysql.dir/logger/message.cc.o CMakeFiles/mysql.dir/logger/timeStamp.cc.o  -o ../../bin/mysql  -lmysqlclient 

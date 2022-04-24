@@ -71,7 +71,7 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/server.dir/all
+src/all: src/CMakeFiles/mysql.dir/all
 src/all: src/CMakeFiles/client.dir/all
 
 .PHONY : src/all
@@ -82,37 +82,37 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/server.dir/clean
+src/clean: src/CMakeFiles/mysql.dir/clean
 src/clean: src/CMakeFiles/client.dir/clean
 
 .PHONY : src/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/server.dir
+# Target rules for target src/CMakeFiles/mysql.dir
 
 # All Build rule for target.
-src/CMakeFiles/server.dir/all:
-	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/depend
-	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16 "Built target server"
-.PHONY : src/CMakeFiles/server.dir/all
+src/CMakeFiles/mysql.dir/all:
+	$(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/depend
+	$(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/text/build/CMakeFiles --progress-num=7,8,9,10,11 "Built target mysql"
+.PHONY : src/CMakeFiles/mysql.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/server.dir/all
+src/CMakeFiles/mysql.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mysql.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/text/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/server.dir/rule
+.PHONY : src/CMakeFiles/mysql.dir/rule
 
 # Convenience name for target.
-server: src/CMakeFiles/server.dir/rule
+mysql: src/CMakeFiles/mysql.dir/rule
 
-.PHONY : server
+.PHONY : mysql
 
 # clean rule for target.
-src/CMakeFiles/server.dir/clean:
-	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/clean
-.PHONY : src/CMakeFiles/server.dir/clean
+src/CMakeFiles/mysql.dir/clean:
+	$(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/clean
+.PHONY : src/CMakeFiles/mysql.dir/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/client.dir

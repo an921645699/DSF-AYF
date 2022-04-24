@@ -28,6 +28,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include/view"
   "../include/controller"
   "../include/mainServer"
+  "../include/mysql"
   )
 
 # Targets to which this target links.

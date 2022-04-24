@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/logger/logger.h
+iostream
+-
+fstream
+-
+message.h
+../include/logger/message.h
+public.h
+../include/logger/public.h
+
+../include/logger/message.h
+public.h
+../include/logger/public.h
+string
+-
+sstream
+-
+
+../include/mysql/mysql.h
+mysql/mysql.h
+-
+string
+-
+
+../include/public/public.h
+map
+-
+unordered_map
+-
+
+/home/ubuntu/text/src/mysql/mysql.cc
+mysql.h
+/home/ubuntu/text/src/mysql/mysql.h
+logger.h
+/home/ubuntu/text/src/mysql/logger.h
+public.h
+/home/ubuntu/text/src/mysql/public.h
+
