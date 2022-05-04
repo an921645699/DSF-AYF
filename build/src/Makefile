@@ -111,34 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/mysql.dir/rule:
-	cd /home/ubuntu/text/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mysql.dir/rule
-.PHONY : src/CMakeFiles/mysql.dir/rule
+src/CMakeFiles/redis.dir/rule:
+	cd /home/ubuntu/text/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/redis.dir/rule
+.PHONY : src/CMakeFiles/redis.dir/rule
 
 # Convenience name for target.
-mysql: src/CMakeFiles/mysql.dir/rule
+redis: src/CMakeFiles/redis.dir/rule
 
-.PHONY : mysql
+.PHONY : redis
 
 # fast build rule for target.
-mysql/fast:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/build
-.PHONY : mysql/fast
-
-# Convenience name for target.
-src/CMakeFiles/client.dir/rule:
-	cd /home/ubuntu/text/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/client.dir/rule
-.PHONY : src/CMakeFiles/client.dir/rule
-
-# Convenience name for target.
-client: src/CMakeFiles/client.dir/rule
-
-.PHONY : client
-
-# fast build rule for target.
-client/fast:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/build
-.PHONY : client/fast
+redis/fast:
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/build
+.PHONY : redis/fast
 
 logger/logger.o: logger/logger.cc.o
 
@@ -146,8 +131,7 @@ logger/logger.o: logger/logger.cc.o
 
 # target to build an object file
 logger/logger.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/logger/logger.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/logger.cc.o
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/logger/logger.cc.o
 .PHONY : logger/logger.cc.o
 
 logger/logger.i: logger/logger.cc.i
@@ -156,8 +140,7 @@ logger/logger.i: logger/logger.cc.i
 
 # target to preprocess a source file
 logger/logger.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/logger/logger.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/logger.cc.i
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/logger/logger.cc.i
 .PHONY : logger/logger.cc.i
 
 logger/logger.s: logger/logger.cc.s
@@ -166,8 +149,7 @@ logger/logger.s: logger/logger.cc.s
 
 # target to generate assembly for a file
 logger/logger.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/logger/logger.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/logger.cc.s
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/logger/logger.cc.s
 .PHONY : logger/logger.cc.s
 
 logger/message.o: logger/message.cc.o
@@ -176,8 +158,7 @@ logger/message.o: logger/message.cc.o
 
 # target to build an object file
 logger/message.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/logger/message.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/message.cc.o
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/logger/message.cc.o
 .PHONY : logger/message.cc.o
 
 logger/message.i: logger/message.cc.i
@@ -186,8 +167,7 @@ logger/message.i: logger/message.cc.i
 
 # target to preprocess a source file
 logger/message.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/logger/message.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/message.cc.i
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/logger/message.cc.i
 .PHONY : logger/message.cc.i
 
 logger/message.s: logger/message.cc.s
@@ -196,8 +176,7 @@ logger/message.s: logger/message.cc.s
 
 # target to generate assembly for a file
 logger/message.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/logger/message.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/message.cc.s
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/logger/message.cc.s
 .PHONY : logger/message.cc.s
 
 logger/timeStamp.o: logger/timeStamp.cc.o
@@ -206,8 +185,7 @@ logger/timeStamp.o: logger/timeStamp.cc.o
 
 # target to build an object file
 logger/timeStamp.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/logger/timeStamp.cc.o
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/timeStamp.cc.o
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/logger/timeStamp.cc.o
 .PHONY : logger/timeStamp.cc.o
 
 logger/timeStamp.i: logger/timeStamp.cc.i
@@ -216,8 +194,7 @@ logger/timeStamp.i: logger/timeStamp.cc.i
 
 # target to preprocess a source file
 logger/timeStamp.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/logger/timeStamp.cc.i
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/timeStamp.cc.i
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/logger/timeStamp.cc.i
 .PHONY : logger/timeStamp.cc.i
 
 logger/timeStamp.s: logger/timeStamp.cc.s
@@ -226,90 +203,35 @@ logger/timeStamp.s: logger/timeStamp.cc.s
 
 # target to generate assembly for a file
 logger/timeStamp.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/logger/timeStamp.cc.s
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/logger/timeStamp.cc.s
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/logger/timeStamp.cc.s
 .PHONY : logger/timeStamp.cc.s
 
-mysql/mysql.o: mysql/mysql.cc.o
+redis/redis.o: redis/redis.cc.o
 
-.PHONY : mysql/mysql.o
-
-# target to build an object file
-mysql/mysql.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/mysql/mysql.cc.o
-.PHONY : mysql/mysql.cc.o
-
-mysql/mysql.i: mysql/mysql.cc.i
-
-.PHONY : mysql/mysql.i
-
-# target to preprocess a source file
-mysql/mysql.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/mysql/mysql.cc.i
-.PHONY : mysql/mysql.cc.i
-
-mysql/mysql.s: mysql/mysql.cc.s
-
-.PHONY : mysql/mysql.s
-
-# target to generate assembly for a file
-mysql/mysql.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/mysql/mysql.cc.s
-.PHONY : mysql/mysql.cc.s
-
-utils/ipAddressPort.o: utils/ipAddressPort.cc.o
-
-.PHONY : utils/ipAddressPort.o
+.PHONY : redis/redis.o
 
 # target to build an object file
-utils/ipAddressPort.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/utils/ipAddressPort.cc.o
-.PHONY : utils/ipAddressPort.cc.o
+redis/redis.cc.o:
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/redis/redis.cc.o
+.PHONY : redis/redis.cc.o
 
-utils/ipAddressPort.i: utils/ipAddressPort.cc.i
+redis/redis.i: redis/redis.cc.i
 
-.PHONY : utils/ipAddressPort.i
-
-# target to preprocess a source file
-utils/ipAddressPort.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/utils/ipAddressPort.cc.i
-.PHONY : utils/ipAddressPort.cc.i
-
-utils/ipAddressPort.s: utils/ipAddressPort.cc.s
-
-.PHONY : utils/ipAddressPort.s
-
-# target to generate assembly for a file
-utils/ipAddressPort.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/utils/ipAddressPort.cc.s
-.PHONY : utils/ipAddressPort.cc.s
-
-utils/tcpClient.o: utils/tcpClient.cc.o
-
-.PHONY : utils/tcpClient.o
-
-# target to build an object file
-utils/tcpClient.cc.o:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/utils/tcpClient.cc.o
-.PHONY : utils/tcpClient.cc.o
-
-utils/tcpClient.i: utils/tcpClient.cc.i
-
-.PHONY : utils/tcpClient.i
+.PHONY : redis/redis.i
 
 # target to preprocess a source file
-utils/tcpClient.cc.i:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/utils/tcpClient.cc.i
-.PHONY : utils/tcpClient.cc.i
+redis/redis.cc.i:
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/redis/redis.cc.i
+.PHONY : redis/redis.cc.i
 
-utils/tcpClient.s: utils/tcpClient.cc.s
+redis/redis.s: redis/redis.cc.s
 
-.PHONY : utils/tcpClient.s
+.PHONY : redis/redis.s
 
 # target to generate assembly for a file
-utils/tcpClient.cc.s:
-	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/utils/tcpClient.cc.s
-.PHONY : utils/tcpClient.cc.s
+redis/redis.cc.s:
+	cd /home/ubuntu/text/build && $(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/redis/redis.cc.s
+.PHONY : redis/redis.cc.s
 
 # Help Target
 help:
@@ -319,8 +241,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... mysql"
-	@echo "... client"
+	@echo "... redis"
 	@echo "... logger/logger.o"
 	@echo "... logger/logger.i"
 	@echo "... logger/logger.s"
@@ -330,15 +251,9 @@ help:
 	@echo "... logger/timeStamp.o"
 	@echo "... logger/timeStamp.i"
 	@echo "... logger/timeStamp.s"
-	@echo "... mysql/mysql.o"
-	@echo "... mysql/mysql.i"
-	@echo "... mysql/mysql.s"
-	@echo "... utils/ipAddressPort.o"
-	@echo "... utils/ipAddressPort.i"
-	@echo "... utils/ipAddressPort.s"
-	@echo "... utils/tcpClient.o"
-	@echo "... utils/tcpClient.i"
-	@echo "... utils/tcpClient.s"
+	@echo "... redis/redis.o"
+	@echo "... redis/redis.i"
+	@echo "... redis/redis.s"
 .PHONY : help
 
 

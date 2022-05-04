@@ -14,6 +14,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include/view)
 include_directories(${PROJECT_SOURCE_DIR}/include/controller)
 include_directories(${PROJECT_SOURCE_DIR}/include/mainServer)
 include_directories(${PROJECT_SOURCE_DIR}/include/mysql)
+include_directories(${PROJECT_SOURCE_DIR}/include/redis)
 
 add_definitions("-g")
 

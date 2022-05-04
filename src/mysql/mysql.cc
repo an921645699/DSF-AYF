@@ -2,12 +2,6 @@
 #include "logger.h"
 #include "public.h"
 
-static const std::string IP = "127.0.0.1";
-static const unsigned short PORT = 3306;
-static const std::string USER = "root";
-static const std::string PASSWORD = "123456";
-static const std::string DB = "mysql";
-
 
 void MySQL::ConnectMysqlServer(const std::string& ip,unsigned short port,const std::string& user,
         const std::string& password,const std::string& db){
@@ -26,21 +20,34 @@ bool MySQL::query(const std::string& sql){
     return true;
 }
 
+bool MySQLDB::Insert(std::string&& sql) {
+    // return value
+    LOG_INFO << "sql:" << sql;
+    // 执行成功返回0
+    if (mysql_query(m_mysqlClient, sql.c_str())) {
+        LOG_ERROR <<  mysql_error(m_mysqlClient);
+        return false;
+    }
+    return true;
+}
+
 MySQL::~MySQL(){
     if(m_mysqlClient != nullptr){
         mysql_close(m_mysqlClient);
     }
 }
 
+/*
 int main(){
     MySQL* m = MySQL::GetInstance();
-    m->ConnectMysqlServer(IP,PORT,USER,PASSWORD,DB);
+    m->ConnectMysqlServer(MYSQL_IP,MYSQL_PORT,USER,PASSWORD,DB);
 
-    std::string name = "ayf";
+    std::string name = "root";
     std::string password = "123456";
     std::stringstream ss;
-    ss << "select * from user where name = \"" << name << "\" and password = \""<< password <<"\";";
-
+    //ss << "select * from user where name = \"" << name << "\" and password = \""<< password <<"\";";
+    ss << "show tables;" ;
 
     std::cout<< m->query(ss.str()) <<std::endl;
 }
+*/

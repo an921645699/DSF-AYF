@@ -1,37 +1,76 @@
-# DSF-AYF
+DSF-AYF
+introduce
+{Distributed System Framework} based on Linux platform C++ written Distributed System Framework, the design concept of cluster + Distributed architecture + microservice mode, through Nginx load balancing to achieve multiple server clusters, Using one Loop per Thread + Thread pool mode, through the open source Libevent I/O framework library, the use of non-blocking IO model, based on event-driven and callback, native support for multi-core multithreading, achieve high concurrency in the network layer. Redis is used as the buffer layer between the server and the database to improve the running efficiency of the server.
 
-#### Description
-**Distributed System Framework(分布式系统框架)**
-{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
+Software architecture
+Mainly includes server, load balancing server, client, thread pool, database connection pool and so on **
+Install the tutorial
+The FROM ubuntu: 18.04
 
-#### Software Architecture
-Software architecture description
+MAINTAINER AYF
 
-#### Installation
+Build and build development tools
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+RUN apt-get update --fix-missing && apt-get install -y fontconfig --fix-missing -y
 
-#### Instructions
+RUN apt-get install wget -y
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+RUN apt-get install gcc -y
 
-#### Contribution
+RUN apt-get install gdb -y
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+RUN apt-get install g++ -y
 
+RUN apt-get install make -y
 
-#### Gitee Feature
+RUN apt-get install vim -y
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+RUN apt-get install cmake -y
+
+RUN apt-get install git -y
+
+** mysql&redis middleware mysql-server redis-server **
+
+RUN apt-get install mysql-server -y
+
+RUN apt-get install redis -y
+
+** Libevent&redis &mysql headers and dynamic libraries **
+
+RUN apt-get install libmysqlclient-dev -y
+
+RUN apt-get install libevent-dev -y
+
+** Redis API and so**
+
+The RUN wget HTTP: / / https://github.com/redis/hiredis/archive/refs/tags/v1.0.2.tar.gz
+
+RUN the tar - ZXVF v1.0.2. Tar. Gz
+
+The RUN CD hiredis - 1.0.2
+
+RUN make
+
+RUN make install
+
+The use of the technical
+Linux socket programming, encapsulation TcpServer, TcpClient
+Encapsulate terminal logs and file logs
+Use of Libevent Network framework library
+The server-side thread pool model is created using metrics
+MySQL database C interface C C++ class encapsulation
+Buffer layer redis encapsulation
+Database connection pool (incomplete)
+The singleton pattern
+Load balancer + Consistent Hash algorithm (incomplete)
+Message encapsulation in CJson format
+The MVC design pattern deals with specific businesses
+cmake
+Docker image packaging
+In the late idea
+Add load balancers between the service layer and the data layer/cache layer to use the consistent hash algorithm for clustering
+Implement different load algorithms to deal with different load scenarios
+The number of thread pools and connection pools is different in different scenarios
+Configure multiple servers in cluster + distributed mode using load balancing
+The business layer separates different business functions into a distributed model of microservice cluster + service registration and discovery center.
+Use the Docker container configuration to package projects as images to achieve cross-platform

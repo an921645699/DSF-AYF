@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mysql
+# Target rules for targets named redis
 
 # Build rule for target.
-mysql: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mysql
-.PHONY : mysql
+redis: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 redis
+.PHONY : redis
 
 # fast build rule for target.
-mysql/fast:
-	$(MAKE) -f src/CMakeFiles/mysql.dir/build.make src/CMakeFiles/mysql.dir/build
-.PHONY : mysql/fast
-
-#=============================================================================
-# Target rules for targets named client
-
-# Build rule for target.
-client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 client
-.PHONY : client
-
-# fast build rule for target.
-client/fast:
-	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/build
-.PHONY : client/fast
+redis/fast:
+	$(MAKE) -f src/CMakeFiles/redis.dir/build.make src/CMakeFiles/redis.dir/build
+.PHONY : redis/fast
 
 # Help Target
 help:
@@ -144,8 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... mysql"
-	@echo "... client"
+	@echo "... redis"
 .PHONY : help
 
 

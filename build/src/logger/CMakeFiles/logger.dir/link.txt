@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/logger.dir/logger.cc.o CMakeFiles/logger.dir/message.cc.o CMakeFiles/logger.dir/timeStamp.cc.o  -o ../../../bin/logger 

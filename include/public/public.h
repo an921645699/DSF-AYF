@@ -66,5 +66,15 @@ enum BIZTYPE{
     
 };
 
+static const std::string REDIS_IP = "127.0.0.1";
+static const unsigned short REDIS_PORT = 6379;
+
+static const std::string MYSQL_IP = "127.0.0.1";
+static const unsigned short MYSQL_PORT = 3306;
+
+static const std::string USER = "root";
+static const std::string PASSWORD = "123456";
+static const std::string DB = "mysql";
+
 
 #endif

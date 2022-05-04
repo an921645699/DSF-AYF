@@ -1,40 +1,76 @@
-# DSF-AYF
+DSF-AYF
+介绍
+{Distributed System Framework(分布式系统框架)} 基于Linux平台C++编写的分布式系统框架，设计理念采用集群＋分布式架构＋微服务模式，通过Nginx 负载均衡实现多个服务器集群，使用one loop per thread +thread pool模式，通过开源的libevent I/O框架库，采用非阻塞 IO 模型，基于事件驱动和回调，原生支持多核多线程，实现网络层达到高并发。使用redis做服务器与数据库之间的缓冲层，提高服务器的运行效率。
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-**Distributed System Framework(分布式系统框架)**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+软件架构
+主要包含服务端，负载均衡服务器，客户端，线程池，数据库连接池等** 
+安装教程
+FROM ubuntu:18.04
 
-#### 软件架构
-软件架构说明
+MAINTAINER AYF
 
+编译构建开发工具
 
-#### 安装教程
+RUN apt-get update --fix-missing && apt-get install -y fontconfig --fix-missing -y
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+RUN apt-get install wget -y
 
-#### 使用说明
+RUN apt-get install gcc -y
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+RUN apt-get install gdb -y
 
-#### 参与贡献
+RUN apt-get install g++ -y
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+RUN apt-get install make -y
 
+RUN apt-get install vim -y
 
-#### 特技
+RUN apt-get install cmake -y
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+RUN apt-get install git -y
+
+** mysql&redis的中间件 mysql-server redis-server **
+
+RUN apt-get install mysql-server -y
+
+RUN apt-get install redis -y
+
+** libevent&redis&mysql的头文件以及动态库**
+
+RUN apt-get install libmysqlclient-dev -y
+
+RUN apt-get install libevent-dev -y
+
+** redis的api和so**
+
+RUN wget https://github.com/redis/hiredis/archive/refs/tags/v1.0.2.tar.gz
+
+RUN tar -zxvf v1.0.2.tar.gz
+
+RUN cd hiredis-1.0.2
+
+RUN make
+
+RUN make install
+
+使用技术
+Linux下socket编程， 封装TcpServer，TcpClient
+封装终端日志和文件日志
+Libevent网络框架库的使用
+服务器端线程池模型的创建使用衡
+MySQL数据库C接口的C++类封装
+缓冲层redis的封装
+数据库连接池(未完成)
+单例模式
+负载均衡器+一致性Hash算法(未完成)
+CJson格式的消息封装
+MVC设计模式处理具体业务
+cmake
+docker镜像打包
+后期想法
+业务层和数据层/缓存层之间增加负载均衡器使用一致性hash算法做集群模式
+实现不同的负载算法应对不同的负载场景
+实现线程池、连接池不同场景实现不同数量
+使用负载均衡配置多台服务器做到集群+分布式模式
+业务层将不同业务功能分离，做成微服务集群+服务注册和发现中心 的分布式模型。
+使用docker容器配置，将项目打包为镜像做到跨平台

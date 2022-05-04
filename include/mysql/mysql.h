@@ -20,6 +20,7 @@ public:
         const std::string& password,const std::string& db);
     
     bool query(const std::string& sql);
+    bool Insert(std::string&& sql);
 
     ~MySQL();
 };

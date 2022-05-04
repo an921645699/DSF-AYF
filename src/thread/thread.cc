@@ -5,7 +5,6 @@
 #include <sys/types.h>
 #include <unistd.h>
 
- 
 
 Thread::Thread(){
     if(pthread_create(&m_tid,NULL,taskFunc,this)){

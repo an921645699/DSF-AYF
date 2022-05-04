@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/redis.dir/redis/redis.cc.o CMakeFiles/redis.dir/logger/logger.cc.o CMakeFiles/redis.dir/logger/message.cc.o CMakeFiles/redis.dir/logger/timeStamp.cc.o  -o ../../bin/redis  -lhiredis 
