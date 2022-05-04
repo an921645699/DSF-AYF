@@ -9,46 +9,41 @@ Mainly includes server, load balancing server, client, thread pool, database con
 
 ### Install the tutorial
 
-The FROM ubuntu: 18.04
-MAINTAINER AYF
+- The FROM ubuntu: 18.04
+- MAINTAINER AYF
 
      **Build and build development tools** 
 
-RUN apt-get update --fix-missing && apt-get install -y fontconfig --fix-missing -y
-
-RUN apt-get install wget -y
-
-RUN apt-get install gcc -y
-
-RUN apt-get install gdb -y
-
-RUN apt-get install g++ -y
-
-RUN apt-get install make -y
-
-RUN apt-get install vim -y
-
-RUN apt-get install cmake -y
-
-RUN apt-get install git -y
+- RUN apt-get update --fix-missing && apt-get install -y fontconfig --fix-missing -y
+- RUN apt-get install wget -y
+- RUN apt-get install gcc -y 
+- RUN apt-get install gdb -y
+- RUN apt-get install g++ -y 
+- RUN apt-get install make -y 
+- RUN apt-get install vim -y 
+- RUN apt-get install cmake -y
+- RUN apt-get install git -y
 
       **mysql&redis middleware mysql-server redis-server ** 
 
-RUN apt-get install mysql-server -y
-RUN apt-get install redis -y
+- RUN apt-get install mysql-server -y
+- RUN apt-get install redis -y
 
      **Libevent&redis &mysql headers and dynamic libraries**
-RUN apt-get install libmysqlclient-dev -y
-RUN apt-get install libevent-dev -y
+
+- RUN apt-get install libmysqlclient-dev -y
+- RUN apt-get install libevent-dev -y
 
      **Redis API and so** 
-The RUN wget HTTP: / / https://github.com/redis/hiredis/archive/refs/tags/v1.0.2.tar.gz
-RUN the tar - ZXVF v1.0.2. Tar. Gz
+
+- The RUN wget HTTP: / / https://github.com/redis/hiredis/archive/refs/tags/v1.0.2.tar.gz
+- RUN the tar - ZXVF v1.0.2. Tar. Gz
 
      **The RUN CD hiredis - 1.0.2** 
 
-RUN make
-RUN make install
+- RUN make
+- RUN make install
+
 
 ### The use of the technical
 
